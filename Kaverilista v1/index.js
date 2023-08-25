@@ -1,6 +1,6 @@
 const kaverit = [];
 
-const lengthLimit = 2;
+const lengthLimit = 10;
 
 let text = "";
 

@@ -3,7 +3,6 @@ let kaverit = [];
 const lengthLimit = 10;
 let text = "";
 let sortedText = "";
-let backup = "";
 
 let friendName = "";
 document.getElementById("addFriend").onclick = function () {
