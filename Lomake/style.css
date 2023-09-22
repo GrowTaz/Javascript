@@ -1,0 +1,19 @@
+label {
+    display: inline-block; 
+    width: 150px; 
+    text-align: right;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    
+}
+textarea{
+    vertical-align: top;
+}
+
+.form{
+    width: 50%;
+}
+.btn{
+    margin-left: 300px;
+    margin-top: 10px;
+}
