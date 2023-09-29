@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hedelmäpeli</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container text-center" >
+    <h2>Hedelmäpeli</h2>
+    <div class="game-container">
+        <button type="button" id="gameBtn">Pelaa</button>
+        <p id="winnings"></p>
+        
+        <div class="betContainer" >
+            <p>Rahaa: <span id="balance">3</span>€</p>
+            <p>Panos: <span id="bet"></span>€</p>
+            <div class="one" >
+                <button type="button"onclick="setBet(1)">1€</button>
+                <button type="button"onclick="setBet(2)">2€</button>
+                <button type="button" onclick="setBet(3)">3€</button>
+            </div>
+        </div>
+        <div class="lockFruit" >
+            <p id="respinStatus"></p>
+            <div class="fruit1" >
+                <img src="gamePics/0.png"  id="fruit1" height="50px"></img>
+                <br>
+                <button type="button" id="lock1" onclick="lockFruit(1)">Lukitse</button>
+            </div>
+            
+            <div class="fruit2" >
+                <img src="gamePics/1.png"   id="fruit2" height="50px"></img>
+                <br>
+                <button type="button" id="lock2" onclick="lockFruit(2)">Lukitse</button>
+            </div>
+            <div class="fruit3" >
+                <img src="gamePics/2.png"  id="fruit3" height="50px"></img>
+                <br>
+                <button type="button" id="lock3" onclick="lockFruit(3)">Lukitse</button>
+            </div>
+            <div class="fruit4" >
+                <img src="gamePics/3.png"  id="fruit4" height="50px"></img>
+                <br>
+                <button type="button" id="lock4" onclick="lockFruit(4)">Lukitse</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<img src="gamePics/4.png" hidden id="fruit5" height="50px"></img>
+<script type="text/javascript" src="main.js"></script>
+
+</html>

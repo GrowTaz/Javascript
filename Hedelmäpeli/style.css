@@ -1,0 +1,27 @@
+.betContainer{
+    width: 200px;
+    background-color: #00ffff;
+    border-radius: 10px;
+}
+.one{
+    display: inline-block;
+    padding-bottom: 5px;
+    
+}
+.lockFruit{
+    display: inline-block;
+    
+    
+    border-radius: 10px;
+    
+}
+.fruit1, .fruit2, .fruit3, .fruit4{
+    background-color: transparent transparent;
+    padding-right: 1px;
+    display: inline-block;
+    border-color: blue;
+    border-style:solid solid;
+    border-width: 2px;
+    align-items: center;
+}
+    
