@@ -3,6 +3,7 @@ var postNumberInput = document.getElementById('postNumber');
 var emailInput = document.getElementById('email');
 var nameInput = document.getElementById('name');
 var addressInput = document.getElementById('address');
+var passInput = document.getElementById('pass');
 
 submitBtn = document.getElementById('submit');
 
@@ -12,8 +13,11 @@ submitBtn.onclick = function () {
     var email = emailInput.value;
     var name = nameInput.value;
     var address = addressInput.value;
+    var pass = passInput.value;
+    const checkboxMies = document.getElementById('mies');
+    const checkboxNainen = document.getElementById('nainen');
     const checkbox1 = document.getElementById('suomi');
-        const checkbox2 = document.getElementById('other');
+    const checkbox2 = document.getElementById('other');
     if (userID.length < 6) {
         alert('Käyttäjä ID pitää olla vähintään 6 merkkiä pitkä');
         return;
@@ -32,6 +36,18 @@ submitBtn.onclick = function () {
     }
     if (address.length === 0){
         alert('Osoite puuttuu!');
+        return;
+    }
+    if (email.length === 0){
+        alert('Sähköposti puuttuu!');
+        return;
+    }
+    if (pass.length === 0){
+        alert('Salasana puuttuu!');
+        return;
+    }
+    if (!checkboxMies.checked && !checkboxNainen.checked) {
+        alert('Valitse vähintään yksi vaihtoehto kielistä');
         return;
     }
     alert('Lomake on lähetetty!')

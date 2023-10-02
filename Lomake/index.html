@@ -25,8 +25,7 @@
         <br>
     <label>Maa:</label>
         <select name="title" required>
-            <option value="" disabled selected>(Valitse maa)</option>
-            <option value="1" >Suomi</option>
+            <option value="0" >Suomi</option>
         </select>
         <br>
     <label>Postinumero:</label>
@@ -36,8 +35,8 @@
     <input type="email" size="50" value=""  id="email" required></input>
     <br>
     <label>Sukupuoli</label>
-    <input type="radio" name="gender" required>Mies</input>
-    <input type="radio" name="gender">Nainen</input>
+    <input type="radio" id="mies" name="gender" required>Mies</input>
+    <input type="radio" id="nainen" name="gender">Nainen</input>
     <br>
     <label>Kieli:</label>
     <input type="checkbox" name="language" id="suomi">Suomi</input>
