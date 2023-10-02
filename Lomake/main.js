@@ -47,7 +47,7 @@ submitBtn.onclick = function () {
         return;
     }
     if (!checkboxMies.checked && !checkboxNainen.checked) {
-        alert('Valitse vähintään yksi vaihtoehto kielistä');
+        alert('Valitse vähintään yksi sukupuoli');
         return;
     }
     alert('Lomake on lähetetty!')
