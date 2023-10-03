@@ -1,20 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="stylesheet" href="style.css">
     <title>Clicker Peli</title>
 </head>
+
 <body>
-    <h2 style="text-align: center;">Clicker Peli</h2>
-    <div class="container" style="user-select: none;">
-        <img src="image.png" id="cookie" height="150px">
-        <p>Score:</p>
-        <p id="score">0</p>
+
+    
+
+    <div class="container">
+        
+        <div class="game">
+            <h2 style="text-align: center;">Clicker Peli</h2>
+            <img src="image.png" id="cookie" height="150px">
+            <p>Points:</p>
+            <p id="score">0</p>
+        </div>
+        <div class="upgrades" >
+            <div class="passive-upgrade" id="passivecookie" >
+                <p><span class="counter" id="pcookies"></span>Passive cookies</p>
+                <p class="p-2">Cost: <span id="passivecost">25 points</span></p>
+            </div>
+            <div class="active-upgrade" id="doublecookie">
+                <p><span class="counter" id="dcookies"> </span>Double cookies</p>
+                <p class="p-2">Cost: <span id="doublecost">10 points</span></p>
+            </div>
+        </div>
     </div>
+
+    <script type="text/javascript" src="main.js"></script>
 </body>
 
-<script type="text/javascript" src="main.js"></script>
 </html>
